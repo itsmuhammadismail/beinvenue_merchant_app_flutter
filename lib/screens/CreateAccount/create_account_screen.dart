@@ -1,4 +1,4 @@
-import 'package:bienvenue_merchant_app_flutter/screens/CreateAccount/components/Body.dart';
+import 'package:bienvenue_merchant_app_flutter/screens/CreateAccount/components/body.dart';
 import 'package:bienvenue_merchant_app_flutter/screens/Layout/back_layout_screen.dart';
 import 'package:flutter/material.dart';
 

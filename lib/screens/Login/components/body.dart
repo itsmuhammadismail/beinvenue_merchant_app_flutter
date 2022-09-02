@@ -101,50 +101,7 @@ class Body extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 25),
-          TextFieldContainer(
-            child: Row(
-              children: [
-                Expanded(
-                  child: Container(
-                    height: 55,
-                    decoration: const BoxDecoration(
-                        color: Color(0xFFF3F5F7),
-                        borderRadius: BorderRadius.all(Radius.circular(10))),
-                    child: Padding(
-                      padding: const EdgeInsets.all(15.0),
-                      child: SvgPicture.asset('assets/logos/google.svg'),
-                    ),
-                  ),
-                ),
-                const SizedBox(width: 20),
-                Expanded(
-                  child: Container(
-                    height: 55,
-                    decoration: const BoxDecoration(
-                        color: Color(0xFFF3F5F7),
-                        borderRadius: BorderRadius.all(Radius.circular(10))),
-                    child: Padding(
-                      padding: const EdgeInsets.all(15.0),
-                      child: SvgPicture.asset('assets/logos/facebook.svg'),
-                    ),
-                  ),
-                ),
-                const SizedBox(width: 20),
-                Expanded(
-                  child: Container(
-                    height: 55,
-                    decoration: const BoxDecoration(
-                        color: Color(0xFFF3F5F7),
-                        borderRadius: BorderRadius.all(Radius.circular(10))),
-                    child: Padding(
-                      padding: const EdgeInsets.all(15.0),
-                      child: SvgPicture.asset('assets/logos/apple.svg'),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
+       
           const SizedBox(height: 25),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,

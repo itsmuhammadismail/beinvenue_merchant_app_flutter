@@ -1,5 +1,7 @@
 import 'package:bienvenue_merchant_app_flutter/components/button.dart';
+import 'package:bienvenue_merchant_app_flutter/components/navigate.dart';
 import 'package:bienvenue_merchant_app_flutter/components/text.dart';
+import 'package:bienvenue_merchant_app_flutter/screens/Login/login_screen.dart';
 import 'package:bienvenue_merchant_app_flutter/utils/constants.dart';
 import 'package:flutter/material.dart';
 
@@ -72,7 +74,7 @@ class Body extends StatelessWidget {
               Button(
                 child: const Text('Sign out',
                     style: TextStyle(color: Colors.white)),
-                onPressed: () {},
+                onPressed: () => Navigate.next(context, LoginScreen.id),
               ),
             ],
           ),

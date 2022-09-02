@@ -30,7 +30,7 @@ class Stats extends StatelessWidget {
           ),
           StatsCard(
             img: 'assets/icons/restuarant_stats.svg',
-            text: 'Restaurant',
+            text: 'My Business',
           ),
         ],
       ),

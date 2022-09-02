@@ -1,12 +1,24 @@
 import 'package:bienvenue_merchant_app_flutter/components/button.dart';
+import 'package:bienvenue_merchant_app_flutter/components/dropdown.dart';
 import 'package:bienvenue_merchant_app_flutter/components/navigate.dart';
 import 'package:bienvenue_merchant_app_flutter/components/text_field.dart';
 import 'package:bienvenue_merchant_app_flutter/components/text_field_container.dart';
 import 'package:bienvenue_merchant_app_flutter/screens/Otp/otp_screen.dart';
 import 'package:flutter/material.dart';
 
-class Body extends StatelessWidget {
+class Body extends StatefulWidget {
   const Body({Key? key}) : super(key: key);
+
+  @override
+  State<Body> createState() => _BodyState();
+}
+
+class _BodyState extends State<Body> {
+  List<String> businessType = ['Type of Business', 'Restaurant', 'Hotel'];
+  String selectedBusinessType = 'Type of Business';
+  List<String> restaurant = ['Cuisine'];
+  String selecetdRestaurant = 'Cuisine';
+  // List<String> excursions = ['Hotel'];
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +39,12 @@ class Body extends StatelessWidget {
           ),
           const SizedBox(height: 15),
           TextFieldContainer(
-            child: MyTextField(hintText: 'Business Name', onChange: () {}),
+            child:
+                MyTextField(hintText: 'Legal Business Name', onChange: () {}),
+          ),
+          const SizedBox(height: 15),
+          TextFieldContainer(
+            child: MyTextField(hintText: 'Corporation Number', onChange: () {}),
           ),
           const SizedBox(height: 15),
           SizedBox(
@@ -112,7 +129,25 @@ class Body extends StatelessWidget {
           ),
           const SizedBox(height: 15),
           TextFieldContainer(
-            child: MyTextField(hintText: 'Cuisine', onChange: () {}),
+            child: MyDropdown(
+                items: businessType,
+                selected: selectedBusinessType,
+                onChange: (value) {
+                  setState(() {
+                    selecetdRestaurant = value;
+                  });
+                }),
+          ),
+          const SizedBox(height: 15),
+          TextFieldContainer(
+            child: MyDropdown(
+                items: restaurant,
+                selected: selecetdRestaurant,
+                onChange: (value) {
+                  setState(() {
+                    selecetdRestaurant = value;
+                  });
+                }),
           ),
           const SizedBox(height: 15),
           TextFieldContainer(

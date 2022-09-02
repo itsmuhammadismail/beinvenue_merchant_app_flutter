@@ -14,15 +14,18 @@ class MyDropdown extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    InputBorder border = OutlineInputBorder(
+      borderRadius: BorderRadius.circular(12),
+      borderSide: const BorderSide(
+        color: Color(0xFFB8B8B8),
+      ),
+    );
+
     return DropdownButtonFormField(
       decoration: InputDecoration(
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(18),
-          borderSide: BorderSide(
-            color: const Color(0xFF111113).withOpacity(0.2),
-            width: 2,
-          ),
-        ),
+        border: border,
+        enabledBorder: border,
+        focusedBorder: border,
       ),
       items: items
           .map(
