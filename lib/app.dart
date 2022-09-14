@@ -1,6 +1,7 @@
-import 'package:bienvenue_merchant_app_flutter/screens/Splash/splash_screen.dart';
-import 'package:bienvenue_merchant_app_flutter/utils/routes.dart';
-import 'package:bienvenue_merchant_app_flutter/utils/theme_data.dart';
+
+import 'package:bienvenue_merchant_app_flutter/features/user/presentation/screen/Splash/splash_screen.dart';
+import 'package:bienvenue_merchant_app_flutter/shared/routes/routes.dart';
+import 'package:bienvenue_merchant_app_flutter/shared/theme/theme_data.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
